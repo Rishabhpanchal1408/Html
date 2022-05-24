@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form methodsss="get">
+        <table>
+            <tr>
+                <th>
+                    <label for="fname">First name:</label>
+                </th>
+                <td>
+                    <input type="text" name="First Name" id="fname" placeholder="Enter First Name" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="lname">Last name:</label>
+                </th>
+                <td>
+                    <input type="text" name="Last Name" id="lname" placeholder="Enter Last Name" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Job">Job:</label>
+                </th>
+                <td>
+                    <input type="text" name="JOB" id="Job" placeholder="Occupation" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Email">E-mail:</label>
+                </th>
+                <td>
+                    <input type="email" name="E-mail" id="Email" placeholder="name@example.com" value="name@example.com" readonly>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Number">MO.no:</label>
+                </th>
+                <td>
+                    <input type="number" name="MO.no" id="NUmber" placeholder="+91( )" min="6000000000" max="9999999999" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="password">Password:</label>
+                </th>
+                <td>
+                    <input type="password" name="Password" id="password" placeholder="Enter Password" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Button">Button:</label>
+                </th>
+                <td>
+                    <input type="button" id="Button" value="Click Here" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="color">Color:</label>
+                </th>
+                <td>
+                    <input type="color" name="Color" id="color" readonly>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="DOB">Date:</label>
+                </th>
+                <td>
+                    <input type="date" name="Date" id="DOB" min="2022-05-09" max="2022-05-15" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="dateTime">Date Time:</label>
+                </th>
+                <td>
+                    <input type="datetime-local" name="datetime-local" id="dateTime" required>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="File">File:</label>
+                </th>
+                <td>
+                    <input type="file" name="File" id="file" multiple>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="hidden">Hidden:</label>
+                </th>
+                <td>
+                    <input type="hidden" name="Hidden" id="hidden" value="Done" readonly>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Gender">Gender:</label>
+                </th>
+                <td>
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" name="Gender" id="Others" value="Others">
+                    <label for="Others">Others</label>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="Games">Games:</label>
+                </th>
+                <td>
+                    <input type="checkbox" name="Games" id="COD" value="COD">
+                    <label for="COD">COD</label>
+                    <input type="checkbox" name="Games" id="Counter Strike" value="Counter Strike">
+                    <label for="Counter Strike">Counter Strike</label>
+                    <input type="checkbox" name="Games" id="Valorent" value="Valorent">
+                    <label for="Valorant ">Valorant</label>
+
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="range">Range:</label>
+                </th>
+                <td>
+                    <input type="range" name="range" id="range" min="10" max="100" step="5">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="week">Week:</label>
+                </th>
+                <td>
+                    <input type="week" name="week" id="week">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="tel">Tel.no:</label>
+                </th>
+                <td>
+                    <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="url">Url:</label>
+                </th>
+                <td>
+                    <input type="url" name="url" id="url">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="comment">Comment:</label></th>
+                <td>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <label for="city">City:</label>
+                </th>
+                <td>
+                    <select name="city" id="city" multiple>
+                        <option value="SRT">Surat</option>
+                        <option value="MuM">Mumbai</option>
+                    </select>
+                </td>
+            </tr>
+
+        </table>
+        <input type="submit" value="SEND">
+        <input type="Reset" value="RESET">
+    </form>
+</body>
+
+</html>
