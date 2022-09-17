@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- FORM -->
+
+    <div class="container">
+
+        <div class="container row my-3">
+            <div class="container col-6">
+                <label for="Brand" class="form-label"><b>brandName</b></label>
+                <select class="form-select" id="Brand">
+                        <option value="APPLE">APPLE</option>
+                        <option value="ASUS">ASUS</option>
+                        <option value="ACER">ACER</option>
+                        <option value="DELL">DELL</option>
+                        <option value="HP">HP</option>
+                        <option value="LENOVO">LENOVO</option>
+                      </select>
+            </div>
+            <div class="container col-6">
+                <label for="Modal" class="form-label"><b>modelNo</b></label>
+                <select class="form-select" id="Modal">
+                        <option value="MacBook Air (M1, 2020)">MacBook Air (M1, 2020)</option>
+                        <option value="MacBook Air (M2, 2022)">MacBook Air (M2, 2022)</option>
+                        <option value="MacBook Pro (13-inch)">MacBook Pro (13-inch)</option>
+                        <option value="Asus M515DA-EJ351WS">Asus M515DA-EJ351WS</option>
+                        <option value="Asus Vivobook M515DA-BQ722WS">Asus Vivobook M515DA-BQ722WS</option>
+                        <option value="Asus TUF Gaming F15 FA506IHRB-HN079W Gaming">Asus TUF Gaming F15 FA506IHRB-HN079W Gaming</option>
+                        <option value="Acer Aspire 7 A715-75G NH.QGBSI.001 Gaming">Acer Aspire 7 A715-75G NH.QGBSI.001 Gaming</option>
+                        <option value="Acer Extensa EX215-54 NX.EGJSI.00E">Acer Extensa EX215-54 NX.EGJSI.00E</option>
+                        <option value="Acer Aspire One S1003 (NT.LCQSI.001)">Acer Aspire One S1003 (NT.LCQSI.001)</option>
+                        <option value="Dell Inspiron 3511 ">Dell Inspiron 3511 </option>
+                        <option value="Dell Vostro 5620">Dell Vostro 5620</option>
+                        <option value="Dell Inspiron 5410 ICC-C782512WIN8">Dell Inspiron 5410 ICC-C782512WIN8</option>
+                        <option value="HP Pavillion x360 Convertible">HP Pavillion x360 Convertible</option>
+                        <option value="HP ENVY">HP ENVY</option>
+                        <option value="HP Pavilion x">HP Pavilion x</option>
+                        <option value="Lenovo IdeaPad Slim 5 (82FG01BAIN)">Lenovo IdeaPad Slim 5 (82FG01BAIN)</option>
+                        <option value="Lenovo ThinkPad E15 (Gen 2)">Lenovo ThinkPad E15 (Gen 2)</option>
+                        <option value="Lenovo IdeaPad Flex 3i 11.6-inch Chromebook">Lenovo IdeaPad Flex 3i 11.6-inch Chromebook</option>
+                      </select>
+            </div>
+        </div>
+        <div class="container row">
+            <div class="container col-6">
+                <label for="core" class="form-label"><b>core</b></label>
+                <select class="form-select" id="core">
+                            <option value="MAC : 8-core CPU with 4 performance cores and 4 efficiency cores">MAC : 8-core CPU with 4 performance cores and 4 efficiency cores</option>
+                            <option value="MAC : 7-core GPU, 8-core GPU">MAC : 7-core GPU, 8-core GPU</option>
+                            <option value="MAC : 16-core Neural Engine">MAC : 16-core Neural Engine</option>
+                            <option value="i3 3rd Gen">i3 3rd Gen</option>
+                            <option value="i3 4th Gen">i3 4th Gen</option>
+                            <option value="i3 5th Gen">i3 5th Gen</option>
+                            <option value="i3 6th Gen">i3 6th Gen</option>
+                            <option value="i3 7th Gen">i3 7th Gen</option>
+                            <option value="i3 8th Gen">i3 8th Gen</option>
+                            <option value="i3 9th Gen">i3 9th Gen</option>
+                            <option value="i3 10th Gen">i3 10th Gen</option>
+                            <option value="i3 11th Gen">i3 11th Gen</option>
+                            <option value="i5 3rd Gen">i5 3rd Gen</option>
+                            <option value="i5 4th Gen">i5 4th Gen</option>
+                            <option value="i5 5th Gen">i5 5th Gen</option>
+                            <option value="i5 6th Gen">i5 6th Gen</option>
+                            <option value="i5 7th Gen">i5 7th Gen</option>
+                            <option value="i5 8th Gen">i5 8th Gen</option>
+                            <option value="i5 9th Gen">i5 9th Gen</option>
+                            <option value="i5 10th Gen">i5 10th Gen</option>
+                            <option value="i5 11th Gen">i5 11th Gen</option>
+                            <option value="i7 3rd Gen">i7 3rd Gen</option>
+                            <option value="i7 4th Gen">i7 4th Gen</option>
+                            <option value="i7 5th Gen">i7 5th Gen</option>
+                            <option value="i7 6th Gen">i7 6th Gen</option>
+                            <option value="i7 7th Gen">i7 7th Gen</option>
+                            <option value="i7 8th Gen">i7 8th Gen</option>
+                            <option value="i7 9th Gen">i7 9th Gen</option>
+                            <option value="i7 10th Gen">i7 10th Gen</option>
+                            <option value="i7 11th Gen">i7 11th Gen</option>
+                          </select>
+            </div>
+            <div class="container col-6">
+                <label for="ram" class="form-label"><b>ram</b></label>
+                <select class="form-select" id="ram">
+                            <option value="4GB">4GB</option>
+                            <option value="8GB">8GB</option>
+                            <option value="16GB">16GB</option>
+                            <option value="32GB">32GB</option>
+                          </select>
+            </div>̥
+        </div>
+        <div class="container d-grid my-3">
+            <button class="btn btn-primary" id="Add">ADD</button>
+        </div>
+        <div class="container d-grid my-3">
+            <button class="btn btn-success" id="Update">UPDATE</button>
+        </div>
+
+    </div>
+
+    <!-- TABLE -->
+    <div class="container">
+        <table class="table table-bordered" id="example">
+            <thead>
+                <tr>
+                    <th>brandName</th>
+                    <th>modelNo</th>
+                    <th>core</th>
+                    <th>ram</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $(function() {
+            // $('#example').DataTable();
+            var Laptoplist = []
+            var aLaptop
+            let option = {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json;charset=utf-8'
+                },
+            }
+
+            $('#Update').hide()
+
+            async function getDefaultData() {
+                let response = await fetch('https://630719ecc0d0f2b80126b1fe.mockapi.io/data', option);
+                Laptoplist = await response.json();
+
+                await $('#example').dataTable().fnDestroy();
+                Laptoplist.forEach(function(laptop) {
+
+                    console.log(laptop.brandName + '\n')
+
+                    let tr = $('<tr></tr>');
+                    tr.append($('<td></td>').text(laptop.brandName))
+                        .append($('<td></td>').text(laptop.modelNo))
+                        .append($('<td></td>').text(laptop.core))
+                        .append($('<td></td>').text(laptop.ram))
+
+                    let actionTd = $('<td></td>').html($('<button></button>').text('Edit').addClass('btn btn-primary edit').attr('rowId', laptop.id))
+                        .append($('<button></button>').text('Delete').addClass('btn btn-danger delete').attr('rowId', laptop.id))
+
+                    tr.append(actionTd)
+                    $('#tbody').append(tr);
+                });
+                $('.delete').click(async function() {
+                    $(this).parents('tr').remove()
+                    let option = {
+                        method: 'DELETE',
+                        headers: {
+                            'Content-Type': 'application/json;charset=utf-8'
+                        }
+                    };
+                    console.log('https://630719ecc0d0f2b80126b1fe.mockapi.io/data/' + $(this).attr('rowId'))
+                    let response = await fetch('https://630719ecc0d0f2b80126b1fe.mockapi.io/data/' + $(this).attr('rowId'), option);
+                    let res = await response.json();
+                })
+
+                $('.edit').click(async function() {
+                    let id = $(this).attr('rowId');
+                    let laptop = Laptoplist.filter(function(value) {
+                        return value.id == id
+                    })
+                    aLaptop = laptop[0]
+                    console.log(aLaptop)
+                    $('#Brand').val(aLaptop.brandName)
+                    $('#Modal').val(aLaptop.modelNo)
+                    $('#core').val(aLaptop.core)
+                    $('#ram').val(aLaptop.ram)
+
+                    $('#Add').hide();
+                    $('#Update').show();
+                })
+
+
+                $('#example').dataTable();
+            }
+
+            getDefaultData()
+
+
+            function Laptops(brandName, modelNo, core, ram) {
+                this.brandName = brandName;
+                this.modelNo = modelNo;
+                this.core = core;
+                this.ram = ram;
+                this.id = 0;
+            }
+
+            var brandName = $('#Brand')
+            var modelNo = $('#Modal')
+            var core = $('#core')
+            var ram = $('#ram')
+            var Add = $('#Add')
+
+            Add.click(async function() {
+                $('#example').dataTable().fnDestroy();
+                let laptop = new Laptops(brandName.val(), modelNo.val(), core.val(), ram.val())
+                let option = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify(laptop)
+                };
+                let response = await fetch('https://630719ecc0d0f2b80126b1fe.mockapi.io/data', option);
+                let res = await response.json();
+
+                getDefaultData()
+            })
+
+            $('#Update').click(async function() {
+                var brandName = $('#Brand')
+                var modelNo = $('#Modal')
+                var core = $('#core')
+                var ram = $('#ram')
+                var Add = $('#Add')
+
+                $('#example').dataTable().fnDestroy();
+                let laptop = new Laptops(brandName.val(), modelNo.val(), core.val(), ram.val(), aLaptop.id)
+                let option = {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json;charset=utf-8'
+                    },
+                    body: JSON.stringify(laptop)
+                };
+                let response = await fetch('https://630719ecc0d0f2b80126b1fe.mockapi.io/data/' + aLaptop.id, option);
+                let res = await response.json();
+
+                await getDefaultData()
+            })
+
+        })
+    </script>
+
+</body>
+
+</html>
